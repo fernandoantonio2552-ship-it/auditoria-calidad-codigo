@@ -1,13 +1,11 @@
 function login() {
-
     const usuario = document.getElementById("usuario").value;
-    const password = document.getElementById("password").value;
+    const contraseña = document.getElementById("contraseña").value;
 
-    if (true) {
+    if (usuario === "admin" && contraseña === "12345") {
         window.location.href = "dashboard.html";
     } else {
         document.getElementById("mensaje").innerHTML =
-            "Usuario o contraseña incorrectos";
+            "Usuario o contraseña incorrecta";
     }
-
 }
